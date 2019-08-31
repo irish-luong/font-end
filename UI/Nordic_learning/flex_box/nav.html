@@ -1,0 +1,95 @@
+<html>
+
+<header>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <style>
+
+        *{
+            box-sizing: border-box
+        }
+
+        li{
+            display: list-item;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+        
+
+        a:hover{
+            color: deeppink;
+            transition: all 5s;
+        }
+        .menu {
+            display: flex;
+            flex-direction: row;
+        }
+        .menu .menu-item > a{
+            font-weight: bold;
+            text-decoration: none;
+                } 
+        .menu .menu-item{
+            position: relative;
+            padding: 8px 16px;
+        }
+
+        .menu .menu-item:hover a{
+            color: deeppink
+        }
+
+        .sub-menu{
+            position: absolute;
+            top: 100%;
+            padding: 8px 0;
+            width: 200%
+
+        }
+
+        ul li.menu-item > .sub-menu{
+            background-color: green;
+        }
+
+        ul li.sub-menu-item{
+            display: flex;
+        }
+
+        ul li.sub-menu-item > .sub-menu{
+            left: 100%;
+            top: 40px;
+            background-color: gold;
+        }
+
+
+    </style>
+
+
+</header>
+
+<body>
+    <ul class = "menu">
+        <li class = "menu-item"> <a href="https://tiki.vn/"> Home </a> </li>
+        <li class = "menu-item">
+            <a href="https://shopee.vn/"> Courses <i class="fas fa-caret-down"></i> </a>
+            <ul class = "sub-menu">
+                <li class = "sub-menu-item"><a href="https://www.w3schools.com/"> Introduction HTLM/CSS </a></li>
+                <li class = "sub-menu-item"><a href="https://www.w3schools.com/css/css_examples.asp"> ReactJs for beginer </a></li>
+                <li class = "sub-menu-item">
+                    <a href="https://kipalog.com/"> Workshop <i class="fas fa-caret-down"></i></a>
+                    <ul class = "sub-menu right">
+                        <li class = "sub-menu-item" ><a href="https://www.w3schools.com/css/css_examples.asp"> Font-end</a></li>
+                        <li class = "sub-menu-item" ><a href="https://www.w3schools.com/css/css_examples.asp"> Back-end </a></li>
+                        <li class = "sub-menu-item" ><a href="https://www.w3schools.com/css/css_examples.asp"> Every thing you should know</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class = "menu-item"> <a href="https://www.lazada.vn/?exlaz=d_1:mm_150050845_51350203_2010350203::11:120832845!6531312045!lazada!e!kwd-19342147066!c&gclid=CjwKCAjwpuXpBRAAEiwAyRRPgZJPN6Iao35HPb_c6oLrqMIFPCwn4696e0a8AJrSUMwRXVI5QaJq8xoC3fAQAvD_BwE"> About</a></li>
+        <li class = "menu-item"> <a href="https://www.sendo.vn/?gclid=CjwKCAjwpuXpBRAAEiwAyRRPgX2xtD_sNIISReKQY9ecW0ftVUbJx_320hUWCrFLdJYe5AKo6tLJmhoCnUYQAvD_BwE&gclsrc=aw.ds"> Event </a></li>
+        <li class = "menu-item"> <a href="https://medium.com/@jgefroh/a-guide-to-using-nginx-for-static-websites-d96a9d034940"> Blog </a></li>
+    </ul>
+</body>
+
+</html>

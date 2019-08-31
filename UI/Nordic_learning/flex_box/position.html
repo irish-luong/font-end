@@ -1,0 +1,119 @@
+<html>
+<header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+            $(document).ready(function () {
+                $("button").click(function () {
+                    $(".popup-container").remove();
+                });
+            });
+        </script>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+
+        .popup-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            z-index: 5;
+        }
+
+        .background {
+            height: 50%;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            position: relative;
+        }
+
+        .element {
+            position: relative;
+            width: 25%;
+            margin: 10px;
+        }
+
+        .header img {
+            position: absolute;
+            width: 100%;
+            height: 70%;
+            bottom: 30%;
+
+        }
+
+        .description {
+            position: absolute;
+            bottom: 0;
+            height: 30%;
+            text-align: center;
+            width: 100%;
+
+        }
+
+        .description {
+            font-size: 15px;
+        }
+
+        .description .name {
+            text-overflow: ellipsis;
+        }
+
+        span {
+            color: red;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</header>
+
+<body>
+    <div class='popup-container'>
+        <img class="popup-banner" src='https://cf.shopee.vn/file/1891a2eb7dbab14a215a07f4647ccfc8'>
+        <div class="popup-close"> <button class="button"> x</button> </div>
+    </div>
+    <div class='background'>
+        <div class='element'>
+            <div class='header'>
+                <img src='https://cf.shopee.vn/file/8b738669f0beba9ac0715937b17f120e'>
+            </div>
+            <div class='description'>
+                <h2 class='name'>Top 100 Tivi Bán chạy nhất 2019</h2>
+                <p class='price'>Từ <span>đ1.530.000<span> </p>
+            </div>
+        </div>
+        <div class='element'>
+            <div class='header'>
+                <img src='https://cf.shopee.vn/file/d22fc44e16eade00c9940581b7fac8a1'>
+            </div>
+            <div class='description'>
+                <h2 class='name'>Tivi dưới 32"</h2>
+                <p class='price'>Từ <span>đ1.530.000</span></p>
+            </div>
+        </div>
+        <div class='element'>
+            <div class='header'>
+                <img src='https://cf.shopee.vn/file/d163f1cbc817ba89165c5dc718dfeaad'>
+            </div>
+            <div class='description'>
+                <h2 class='name'>Tivi Từ 40" - 43"</h2>
+                <p class='price'>Từ <span>đ3.990.000</span></p>
+            </div>
+        </div>
+        <div class='element'>
+            <div class='header'>
+                <img src='https://cf.shopee.vn/file/abc5b27c57d0f9dff3885748b300fa0d'>
+            </div>
+            <div class='description'>
+                <h2 class='name'>Tivi Trên 43"</h2>
+                <p class='price'>Từ <span>đ6.990.000</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
